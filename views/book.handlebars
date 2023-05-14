@@ -1,0 +1,20 @@
+<div id="book-page">
+    <a href="/books">Voltar</a>
+    <div class="container">
+        <h1 name="title">
+            {{book.title}}
+        </h1>
+        <p>Este livro tem {{book.pageqty}} páginas</p>
+        <h2>Descricão:</h2>
+        <p>{{book.descricao}}</p>
+        <h2>Nota:</h2>
+        <p>{{book.nota}}</p>
+        <h2>Data que leu:</h2>
+        <p>{{book.data}}</p>
+        <a href="/books/edit/{{book.id}}">Editar Informações</a>
+        <form action="/books/remove/{{book.id}}" method="POST">
+            <button type="hidden"><i class="fa-solid fa-trash"></i></button>
+        </form>
+        <a href="/saibamais" >Saiba mais</a>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<form action="/books/updatebook" method="POST" class="form" >
+    <h2>Editar os Livros que você já leu!</h2>
+    <input type="hidden" name="id" value="{{book.id}}" />
+    <div class="form-control">
+        <label for="title">Titulo:</label>
+        <input type="text" name="title" placeholder="Digite o titulo" value="{{book.title}}" />
+    </div>
+    
+       <div class="form-control"> 
+            <label for="pageqty">Numero de paginas:</label>
+            <input type="number" name="pageqty" placeholder="Digite o numero de paginas" value="{{book.pageqty}}"/>
+        </div>
+
+        <div class="form-control">
+            <label for="descricao" >Descrição do Livro</label>
+            <textarea name="descricao" placeholder="Digite a Descrição do Livro"  >{{book.descricao}}</textarea>
+        </div>
+
+        <div class="form-control">
+            <label for="nota">Nota para o Livro</label>
+            <input  type="number" name="nota" placeholder="Nota para o Livro" value="{{book.nota}}" />
+        </div>
+    <input class="btn" type="submit" value="Editar"/>
+</form>

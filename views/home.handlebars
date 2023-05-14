@@ -1,0 +1,29 @@
+<form action="/books/insertbook" method="POST" class="form" >
+    <h2>Cadastre os Livros que você já leu!</h2>
+
+    <div class="form-control">
+        <label for="title">Titulo:</label>
+        <input type="text" name="title" placeholder="Digite o titulo" />
+    </div>
+    
+       <div class="form-control"> 
+            <label for="pageqty">Numero de paginas:</label>
+            <input type="number" name="pageqty" placeholder="Digite o numero de paginas" />
+        </div>
+
+        <div class="form-control">
+            <label for="descricao" >Descrição do Livro</label>
+            <textarea name="descricao" placeholder="Digite a Descrição do Livro" ></textarea>
+        </div>
+
+        <div class="form-control">
+            <label for="nota">Nota para o Livro</label>
+            <input  type="number" name="nota" placeholder="Nota para o Livro" />
+        </div>
+
+        <div>
+            <label for="data">Data que leu o Livro</label>
+            <input name="data" type="date" placeholder="Data que leu o livro" />
+        </div>
+    <input class="btn" type="submit" value="cadastrar"/>
+</form>
